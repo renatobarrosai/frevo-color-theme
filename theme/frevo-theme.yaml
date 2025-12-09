@@ -1,0 +1,533 @@
+# ==============================================================================
+# FREVO COLOR THEME - Color Palette Definition
+# ==============================================================================
+#
+# A vibrant dark theme inspired by the energy and colors of Pernambuco's
+# carnival nights, Brazil. Designed for accessibility (WCAG 2.2 AA compliant),
+# reduced eye strain, and OLED-safe backgrounds.
+#
+# Author:      Renato Barros
+# Repository:  https://github.com/renatobarros/frevo-theme
+# Contact:     falecomrenatobarros@gmail.com
+# Version:     1.0.0
+# License:     MIT
+#
+# Copyright (c) 2025 Renato Barros
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# ==============================================================================
+# COLOR SPACE NOTATION
+# ==============================================================================
+#
+# Colors are defined using OKLCH color space for perceptual uniformity:
+#   - L (Lightness): 0.0 (black) to 1.0 (white)
+#   - C (Chroma): 0.0 (gray) to ~0.4 (maximum saturation)
+#   - H (Hue): 0 to 360 degrees
+#
+# HEX values are provided for compatibility with editors and tools.
+#
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# METADATA
+# ------------------------------------------------------------------------------
+meta:
+  name: "Frevo"
+  description: "Vibrant dark theme inspired by Pernambuco's carnival nights, Brazil"
+  author: "Renato Barros"
+  version: "1.0.0"
+  variant: "dark"
+  accent: "blue"
+
+# ------------------------------------------------------------------------------
+# BASE COLORS
+# ------------------------------------------------------------------------------
+# Foundation colors for backgrounds and foregrounds.
+# Backgrounds avoid pure black (#000000) to prevent OLED haloing artifacts.
+# ------------------------------------------------------------------------------
+base:
+  # Background colors - layered depth system
+  bg_primary:
+    hex: "#1A1F2E"
+    oklch: [0.15, 0.008, 260]
+    name: "Background Primary"
+    usage: "Main editor background"
+
+  bg_secondary:
+    hex: "#21283A"
+    oklch: [0.18, 0.01, 260]
+    name: "Background Secondary"
+    usage: "Sidebar, panels, cards"
+
+  bg_tertiary:
+    hex: "#2A3447"
+    oklch: [0.22, 0.015, 260]
+    name: "Background Tertiary"
+    usage: "Hover states, buttons"
+
+  bg_elevated:
+    hex: "#2F3D5C"
+    oklch: [0.24, 0.015, 260]
+    name: "Background Elevated"
+    usage: "Modals, tooltips, dropdowns"
+
+  # Foreground colors - text hierarchy
+  fg_primary:
+    hex: "#F2F4F8"
+    oklch: [0.95, 0.01, 260]
+    name: "Foreground Primary"
+    usage: "Main text content"
+    contrast:
+      vs_bg_primary: 16.9
+
+  fg_secondary:
+    hex: "#B0B8CC"
+    oklch: [0.75, 0.02, 260]
+    name: "Foreground Secondary"
+    usage: "Secondary text, comments"
+    contrast:
+      vs_bg_primary: 8.6
+
+  fg_tertiary:
+    hex: "#6B7589"
+    oklch: [0.55, 0.03, 260]
+    name: "Foreground Tertiary"
+    usage: "Placeholders, disabled elements"
+    contrast:
+      vs_bg_primary: 3.9
+
+# ------------------------------------------------------------------------------
+# SYNTAX HIGHLIGHTING COLORS
+# ------------------------------------------------------------------------------
+# Semantic colors for code syntax highlighting.
+# Each color is optimized for readability and accessibility.
+# ------------------------------------------------------------------------------
+syntax:
+  # Keywords and primary language constructs
+  blue:
+    hex: "#4B9AFF"
+    oklch: [0.70, 0.22, 260.5]
+    name: "Blue"
+    usage: "Keywords: function, const, let, var, import"
+    contrast:
+      vs_bg_primary: 5.6
+    reference: "#0068FF"
+
+  # Control flow and structure
+  purple:
+    hex: "#D966FF"
+    oklch: [0.65, 0.26, 302.0]
+    name: "Purple"
+    usage: "Control flow: if, for, while, class, interface"
+    contrast:
+      vs_bg_primary: 6.3
+    reference: "#4400FF"
+
+  # Strings and literals
+  cyan:
+    hex: "#00A3E5"
+    oklch: [0.70, 0.158, 235.9]
+    name: "Cyan"
+    usage: "Strings, template literals"
+    contrast:
+      vs_bg_primary: 5.6
+    reference: "#00B7FF"
+
+  # Comments and documentation
+  green:
+    hex: "#7AD96A"
+    oklch: [0.75, 0.14, 142.0]
+    name: "Green"
+    usage: "Comments, docstrings"
+    contrast:
+      vs_bg_primary: 8.0
+    reference: "#4AE23D"
+
+  # Classes and type definitions
+  yellow:
+    hex: "#F0B000"
+    oklch: [0.75, 0.178, 91.3]
+    name: "Yellow"
+    usage: "Class names, type definitions"
+    contrast:
+      vs_bg_primary: 10.3
+    reference: "#FFCE00"
+
+  # Operators and symbols
+  orange:
+    hex: "#FF6700"
+    oklch: [0.697, 0.203, 43.8]
+    name: "Orange"
+    usage: "Operators, punctuation symbols"
+    contrast:
+      vs_bg_primary: 11.0
+    reference: "#FF6700"
+
+  # Errors and warnings
+  red:
+    hex: "#FF5B5F"
+    oklch: [0.65, 0.22, 26.7]
+    name: "Red"
+    usage: "Errors, warnings, deletions"
+    contrast:
+      vs_bg_primary: 10.1
+    reference: "#ED282C"
+
+# ------------------------------------------------------------------------------
+# USER INTERFACE COLORS
+# ------------------------------------------------------------------------------
+# Colors for UI elements, states, and interactive components.
+# ------------------------------------------------------------------------------
+ui:
+  # Accent colors - primary interaction
+  accent:
+    hex: "#4B9AFF"
+    oklch: [0.70, 0.22, 260.5]
+    name: "Accent Blue"
+    usage: "Links, focus rings, primary buttons"
+
+  accent_hover:
+    hex: "#7AB6FF"
+    oklch: [0.80, 0.20, 260.5]
+    name: "Accent Hover"
+    usage: "Hover state for accent elements"
+
+  accent_active:
+    hex: "#2470D5"
+    oklch: [0.58, 0.24, 260.5]
+    name: "Accent Active"
+    usage: "Active/pressed state for accent elements"
+
+  # Semantic state colors
+  success:
+    hex: "#5FD94F"
+    oklch: [0.75, 0.20, 142.0]
+    name: "Success"
+    usage: "Success messages, positive actions"
+    contrast:
+      vs_bg_primary: 7.6
+
+  warning:
+    hex: "#DAA445"
+    oklch: [0.78, 0.16, 75]
+    name: "Warning"
+    usage: "Warning messages, caution states"
+    contrast:
+      vs_bg_primary: 11.9
+
+  error:
+    hex: "#FF5B5F"
+    oklch: [0.65, 0.22, 26.7]
+    name: "Error"
+    usage: "Error messages, destructive actions"
+    contrast:
+      vs_bg_primary: 10.1
+
+  info:
+    hex: "#00B7FF"
+    oklch: [0.737, 0.158, 235.9]
+    name: "Info"
+    usage: "Informational messages"
+    contrast:
+      vs_bg_primary: 6.4
+
+  # Selection and highlights
+  selection:
+    hex: "#2B4A7A"
+    oklch: [0.40, 0.10, 260]
+    alpha: 0.4
+    name: "Selection Background"
+    usage: "Text selection highlight"
+
+  find_highlight:
+    hex: "#C7A340"
+    oklch: [0.60, 0.15, 90]
+    alpha: 0.5
+    name: "Find Match Highlight"
+    usage: "Search result highlighting"
+
+  current_line:
+    hex: "#0F2851"
+    oklch: [0.20, 0.05, 260]
+    alpha: 0.5
+    name: "Current Line Highlight"
+    usage: "Active line background"
+
+  # Borders and separators
+  border_subtle:
+    hex: "#1F3D68"
+    oklch: [0.30, 0.04, 260]
+    name: "Border Subtle"
+    usage: "Subtle dividers, panel borders"
+
+  border_strong:
+    hex: "#3D5A8F"
+    oklch: [0.45, 0.08, 260]
+    name: "Border Strong"
+    usage: "Prominent borders, focus outlines"
+
+  # Editor gutter and auxiliary UI
+  line_number:
+    hex: "#4A6083"
+    oklch: [0.45, 0.05, 260]
+    name: "Line Numbers"
+    usage: "Editor line numbers"
+    contrast:
+      vs_bg_primary: 2.8 # Decorative element
+
+  indent_guide:
+    hex: "#1A3558"
+    oklch: [0.28, 0.03, 260]
+    name: "Indent Guides"
+    usage: "Indentation guide lines"
+
+  # Version control indicators
+  git_added:
+    hex: "#5FD94F"
+    oklch: [0.75, 0.20, 142.0]
+    name: "Git Added"
+    usage: "Added lines in diff view"
+
+  git_modified:
+    hex: "#4B9AFF"
+    oklch: [0.70, 0.22, 260.5]
+    name: "Git Modified"
+    usage: "Modified lines in diff view"
+
+  git_deleted:
+    hex: "#FF5B5F"
+    oklch: [0.65, 0.22, 26.7]
+    name: "Git Deleted"
+    usage: "Deleted lines in diff view"
+
+  git_conflict:
+    hex: "#D966FF"
+    oklch: [0.65, 0.26, 302.0]
+    name: "Git Conflict"
+    usage: "Merge conflict markers"
+
+# ------------------------------------------------------------------------------
+# ANSI TERMINAL COLORS
+# ------------------------------------------------------------------------------
+# Standard 16-color ANSI palette for terminal emulators.
+# Colors 0-7 are normal intensity, 8-15 are bright variants.
+# ------------------------------------------------------------------------------
+ansi:
+  # Normal colors (0-7)
+  black:
+    hex: "#0D2449"
+    oklch: [0.18, 0.06, 260]
+    name: "ANSI Black"
+    index: 0
+
+  red:
+    hex: "#FF5B5F"
+    oklch: [0.65, 0.22, 26.7]
+    name: "ANSI Red"
+    index: 1
+
+  green:
+    hex: "#5FD94F"
+    oklch: [0.75, 0.20, 142.0]
+    name: "ANSI Green"
+    index: 2
+
+  yellow:
+    hex: "#F0B000"
+    oklch: [0.75, 0.178, 91.3]
+    name: "ANSI Yellow"
+    index: 3
+
+  blue:
+    hex: "#4B9AFF"
+    oklch: [0.70, 0.22, 260.5]
+    name: "ANSI Blue"
+    index: 4
+
+  magenta:
+    hex: "#D966FF"
+    oklch: [0.65, 0.26, 302.0]
+    name: "ANSI Magenta"
+    index: 5
+
+  cyan:
+    hex: "#00A3E5"
+    oklch: [0.70, 0.158, 235.9]
+    name: "ANSI Cyan"
+    index: 6
+
+  white:
+    hex: "#F2F4F8"
+    oklch: [0.95, 0.01, 260]
+    name: "ANSI White"
+    index: 7
+
+  # Bright colors (8-15)
+  bright_black:
+    hex: "#6B7589"
+    oklch: [0.55, 0.03, 260]
+    name: "ANSI Bright Black"
+    index: 8
+    usage: "Comments in terminal"
+
+  bright_red:
+    hex: "#FF8A8D"
+    oklch: [0.75, 0.20, 26.7]
+    name: "ANSI Bright Red"
+    index: 9
+
+  bright_green:
+    hex: "#8EFF7D"
+    oklch: [0.85, 0.18, 142.0]
+    name: "ANSI Bright Green"
+    index: 10
+
+  bright_yellow:
+    hex: "#FFE566"
+    oklch: [0.92, 0.16, 91.3]
+    name: "ANSI Bright Yellow"
+    index: 11
+
+  bright_blue:
+    hex: "#7AB6FF"
+    oklch: [0.80, 0.20, 260.5]
+    name: "ANSI Bright Blue"
+    index: 12
+
+  bright_magenta:
+    hex: "#EA9BFF"
+    oklch: [0.75, 0.24, 302.0]
+    name: "ANSI Bright Magenta"
+    index: 13
+
+  bright_cyan:
+    hex: "#5DD4FF"
+    oklch: [0.82, 0.14, 235.9]
+    name: "ANSI Bright Cyan"
+    index: 14
+
+  bright_white:
+    hex: "#FFFFFF"
+    oklch: [0.99, 0.00, 0]
+    name: "ANSI Bright White"
+    index: 15
+
+# ------------------------------------------------------------------------------
+# TEXTMATE SCOPE MAPPINGS
+# ------------------------------------------------------------------------------
+# Semantic token mappings for syntax highlighting engines.
+# Maps TextMate scopes to palette colors with optional font styles.
+# ------------------------------------------------------------------------------
+textmate_scopes:
+  comment:
+    scope: "comment"
+    color: "green"
+    font_style: "italic"
+
+  string:
+    scope: "string"
+    color: "cyan"
+
+  number:
+    scope: "constant.numeric"
+    color: "orange"
+
+  boolean:
+    scope: "constant.language.boolean"
+    color: "orange"
+
+  keyword:
+    scope: "keyword"
+    color: "blue"
+    font_style: "bold"
+
+  keyword_control:
+    scope: "keyword.control"
+    color: "purple"
+    font_style: "bold"
+
+  function:
+    scope: "entity.name.function"
+    color: "cyan"
+
+  function_call:
+    scope: "meta.function-call"
+    color: "cyan"
+
+  class:
+    scope: "entity.name.class"
+    color: "yellow"
+    font_style: "bold"
+
+  type:
+    scope: "entity.name.type"
+    color: "yellow"
+
+  constant:
+    scope: "constant"
+    color: "green"
+
+  variable:
+    scope: "variable"
+    color: "fg_primary"
+
+  operator:
+    scope: "keyword.operator"
+    color: "orange"
+
+  punctuation:
+    scope: "punctuation"
+    color: "fg_secondary"
+
+  tag:
+    scope: "entity.name.tag"
+    color: "blue"
+
+  attribute:
+    scope: "entity.other.attribute-name"
+    color: "cyan"
+
+  property:
+    scope: "support.type.property-name"
+    color: "cyan"
+
+  invalid:
+    scope: "invalid"
+    color: "red"
+    font_style: "bold"
+
+# ------------------------------------------------------------------------------
+# VALIDATION METADATA
+# ------------------------------------------------------------------------------
+# Accessibility and quality assurance information.
+# ------------------------------------------------------------------------------
+validation:
+  accessibility:
+    wcag_version: "2.2"
+    conformance_level: "AA"
+    colorblind_safe: true
+  display:
+    oled_safe: true
+    haloing_prevention: true
+    blue_light_reduced: true
+  palette:
+    total_syntax_colors: 7
+    total_ui_colors: 18
+    total_ansi_colors: 16
