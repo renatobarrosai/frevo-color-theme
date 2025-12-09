@@ -1,133 +1,131 @@
 # Available Ports
 
-This document lists all available ports of the Frevo Color Theme and their current status.
+All available ports of the Frevo Color Theme and their current status.
 
 ## Status Legend
 
-| Badge | Status | Description |
-|-------|--------|-------------|
-| ✅ | **Official** | Maintained by the core team, included in main repository |
-| 🚧 | **In Progress** | Currently under development |
-| 📝 | **Planned** | On the roadmap, not yet started |
-| 👥 | **Community** | Maintained by community members |
+| Icon | Status | Description |
+|------|--------|-------------|
+| **Available** | Ready to use | Included in repository |
 
 ---
 
 ## Editors
 
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| **Neovim** | ✅ Official | 1.0.0 | [@renatobarros](https://github.com/renatobarros) | [Install](../ports/neovim/) |
-| VS Code | 📝 Planned | — | — | — |
-| Zed | 📝 Planned | — | — | — |
-| Helix | 📝 Planned | — | — | — |
-| Sublime Text | 📝 Planned | — | — | — |
-| JetBrains IDEs | 📝 Planned | — | — | — |
-| Vim | 📝 Planned | — | — | — |
-| Emacs | 📝 Planned | — | — | — |
+| Application | Files | Link |
+|-------------|-------|------|
+| **Neovim** | Full plugin with integrations | [ports/frevo.nvim](../ports/frevo.nvim/) |
+| **VS Code** | `frevo-color-theme.json` | [ports/vscode](../ports/vscode/) |
+| **JetBrains IDEs** | `frevo.icls` | [ports/jetbrains](../ports/jetbrains/) |
+| **Kate** | `frevo.json` | [ports/kate](../ports/kate/) |
 
 ---
 
 ## Terminals
 
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| Kitty | 📝 Planned | — | — | — |
-| Alacritty | 📝 Planned | — | — | — |
-| WezTerm | 📝 Planned | — | — | — |
-| iTerm2 | 📝 Planned | — | — | — |
-| Windows Terminal | 📝 Planned | — | — | — |
-| Foot | 📝 Planned | — | — | — |
-| GNOME Terminal | 📝 Planned | — | — | — |
-| Konsole | 📝 Planned | — | — | — |
+| Application | Files | Link |
+|-------------|-------|------|
+| **Kitty** | `frevo.conf` | [ports/kitty](../ports/kitty/) |
+| **Alacritty** | `frevo.toml` | [ports/alacritty](../ports/alacritty/) |
+| **iTerm2** | `frevo.itermcolors` | [ports/iterm2](../ports/iterm2/) |
 
 ---
 
-## Desktop Environment (Linux)
+## Desktop Environment
 
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| Hyprland | 📝 Planned | — | — | — |
-| Waybar | 📝 Planned | — | — | — |
-| Hyprlock | 📝 Planned | — | — | — |
-| Rofi | 📝 Planned | — | — | — |
-| Wofi | 📝 Planned | — | — | — |
-| Dunst | 📝 Planned | — | — | — |
-| Mako | 📝 Planned | — | — | — |
-
----
-
-## GTK/Qt Themes
-
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| GTK 3 | 📝 Planned | — | — | — |
-| GTK 4 | 📝 Planned | — | — | — |
-| Qt 5 (Kvantum) | 📝 Planned | — | — | — |
-| Qt 6 (Kvantum) | 📝 Planned | — | — | — |
+| Application | Files | Link |
+|-------------|-------|------|
+| **Hyprland** | `frevo.conf` | [ports/hyprland](../ports/hyprland/) |
+| **Waybar** | `frevo.css` | [ports/waybar](../ports/waybar/) |
+| **Rofi** | `frevo.rasi` | [ports/rofi](../ports/rofi/) |
+| **Wofi** | `frevo.css` | [ports/wofi](../ports/wofi/) |
+| **Dunst** | `frevo.conf` | [ports/dunst](../ports/dunst/) |
+| **GTK** | `frevo.css` | [ports/gtk](../ports/gtk/) |
+| **Qt (Kvantum)** | `frevo-kvantum.kvconfig` | [ports/qt](../ports/qt/) |
 
 ---
 
-## CLI/TUI Tools
+## Shells & CLI
 
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| btop | 📝 Planned | — | — | — |
-| htop | 📝 Planned | — | — | — |
-| lazygit | 📝 Planned | — | — | — |
-| lazydocker | 📝 Planned | — | — | — |
-| fzf | 📝 Planned | — | — | — |
-| bat | 📝 Planned | — | — | — |
-| delta | 📝 Planned | — | — | — |
-| tmux | 📝 Planned | — | — | — |
+| Application | Files | Link |
+|-------------|-------|------|
+| **Fish** | `frevo.fish` | [ports/fish](../ports/fish/) |
+| **Zsh** | `frevo.zsh` | [ports/zsh](../ports/zsh/) |
+| **Zsh Syntax Highlighting** | `frevo.zsh` | [ports/zsh-syntax-highlighting](../ports/zsh-syntax-highlighting/) |
+| **Starship** | `frevo.toml` | [ports/starship](../ports/starship/) |
+| **Tmux** | `frevo.conf` | [ports/tmux](../ports/tmux/) |
+| **Yazi** | `frevo.toml` | [ports/yazi](../ports/yazi/) |
 
 ---
 
-## Web & Other
+## Browsers
 
-| Application | Status | Version | Maintainer | Links |
-|-------------|--------|---------|------------|-------|
-| Firefox (userChrome) | 📝 Planned | — | — | — |
-| Slack | 📝 Planned | — | — | — |
-| Discord (BetterDiscord) | 📝 Planned | — | — | — |
-| Obsidian | 📝 Planned | — | — | — |
+| Application | Files | Link |
+|-------------|-------|------|
+| **Firefox** (userChrome) | `frevo.userChrome.css` | [ports/firefox](../ports/firefox/) |
+| **Chrome** | `manifest.json` | [ports/chrome](../ports/chrome/) |
+
+---
+
+## Web Services
+
+| Application | Files | Link |
+|-------------|-------|------|
+| **GitHub** | `frevo.json` | [ports/github](../ports/github/) |
+| **YouTube** (Stylus) | `frevo.user.css` | [ports/youtube](../ports/youtube/) |
+| **YouTube Music** (Stylus) | `frevo.user.css` | [ports/youtube-music](../ports/youtube-music/) |
+
+---
+
+## Applications
+
+| Application | Files | Link |
+|-------------|-------|------|
+| **Slack** | `frevo.txt` | [ports/slack](../ports/slack/) |
+| **Todoist** | `frevo.txt` | [ports/todoist](../ports/todoist/) |
+| **qBittorrent** | `frevo.css` | [ports/qbittorrent](../ports/qbittorrent/) |
+| **Calibre** | `frevo.css` | [ports/calibre](../ports/calibre/) |
+| **LibreOffice** | `frevo.soc` | [ports/libreoffice](../ports/libreoffice/) |
+
+---
+
+## Development Tools
+
+| Application | Files | Link |
+|-------------|-------|------|
+| **OpenCode** | `frevo-theme.json` | [ports/opencode](../ports/opencode/) |
+
+---
+
+## Creative Tools
+
+| Application | Files | Link |
+|-------------|-------|------|
+| **Figma** | `frevo.json` | [ports/figma](../ports/figma/) |
+| **GIMP** | `frevo.gpl` | [ports/gimp](../ports/gimp/) |
+| **FreeCAD** | `frevo.json` | [ports/freecad](../ports/freecad/) |
+| **KiCad** | `frevo.json` | [ports/kicad](../ports/kicad/) |
 
 ---
 
 ## Request a Port
 
-Don't see your favorite application listed? You can:
+Don't see your favorite application?
 
-1. **Request it:** [Open an issue](https://github.com/renatobarros/frevo-theme/issues/new?labels=port-request&template=port-request.md) with the "port-request" label
-2. **Create it yourself:** See the [Contributing Guide](CONTRIBUTING.md) for instructions on creating a new port
+1. **Request it**: [Open an issue](https://github.com/renatobarros/frevo-theme/issues/new?labels=port-request) with the `port-request` label
+2. **Create it**: See [CONTRIBUTING.md](CONTRIBUTING.md) for instructions
 
 ---
 
 ## Community Ports
 
-Community-maintained ports are welcome! If you've created a port for an application not listed here:
+Want to contribute a port?
 
-1. Ensure it follows the [color specifications](PALETTE.md)
-2. Submit a PR to add it to this list
-3. Include installation instructions
-
-Community ports are marked with 👥 and link to their respective repositories.
-
----
-
-## Port Priority
-
-The following ports are prioritized for official support:
-
-1. ~~Neovim~~ ✅ Complete
-2. VS Code
-3. Kitty
-4. Alacritty
-5. Hyprland + Waybar
-6. GTK
-
-This order is based on user requests and maintainer availability. Want to influence priorities? [Vote on issues](https://github.com/renatobarros/frevo-theme/issues) or contribute!
+1. Follow the [color specifications](PALETTE.md)
+2. Create the port in `ports/<app-name>/`
+3. Include a README with installation instructions
+4. Submit a Pull Request
 
 ---
 
-[← Back to Documentation](README.md) • [← Back to Main README](../README.md)
+[Back to Documentation](README.md) | [Back to Main README](../README.md)

@@ -1,40 +1,42 @@
-# Frevo Documentation
+# Documentation
 
-Welcome to the Frevo Color Theme documentation. This folder contains detailed information about the theme's colors, installation, and contribution guidelines.
+Welcome to the Frevo Color Theme documentation.
 
 ## Quick Navigation
 
 | Document | Description |
 |----------|-------------|
-| [PALETTE.md](PALETTE.md) | Complete color reference with hex codes, contrast ratios, and usage |
-| [INSTALL.md](INSTALL.md) | Step-by-step installation instructions for all platforms |
-| [PORTS.md](PORTS.md) | Status and links for all available ports |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Guidelines for contributing to the project |
+| [PALETTE.md](PALETTE.md) | Color reference with hex codes, contrast ratios, and usage |
+| [INSTALL.md](INSTALL.md) | Installation instructions for all platforms |
+| [PORTS.md](PORTS.md) | Status and links for all 35+ ports |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Guidelines for contributing |
 
-## Quick Links
-
-- [← Back to Main README](../README.md)
-- [License](../LICENSE)
-- [Ports Directory](../ports/)
-
-## Documentation Structure
+## Structure
 
 ```
 docs/
-├── README.md        # This file - documentation index
-├── PALETTE.md       # Color specifications
-├── INSTALL.md       # Installation guide
-├── PORTS.md         # Port status and links
-└── CONTRIBUTING.md  # Contribution guidelines
+  README.md          # This file
+  PALETTE.md         # Color specifications
+  INSTALL.md         # Installation guide
+  PORTS.md           # Port status and links
+  CONTRIBUTING.md    # Contribution guidelines
 ```
+
+## Quick Links
+
+- [Main README](../README.md)
+- [License](../LICENSE)
+- [Ports Directory](../ports/)
 
 ## Need Help?
 
-- **Installation issues?** Check [INSTALL.md](INSTALL.md)
-- **Want to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md)
-- **Looking for a specific port?** See [PORTS.md](PORTS.md)
-- **Color specifications?** Visit [PALETTE.md](PALETTE.md)
+| Question | Resource |
+|----------|----------|
+| Installation issues? | [INSTALL.md](INSTALL.md) |
+| Want to contribute? | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Looking for a port? | [PORTS.md](PORTS.md) |
+| Color specifications? | [PALETTE.md](PALETTE.md) |
 
 ---
 
-[← Back to Main README](../README.md)
+[Back to Main README](../README.md)

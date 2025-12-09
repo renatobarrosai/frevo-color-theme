@@ -1,0 +1,91 @@
+/* Frevo theme for Waybar
+ * Source: theme/frevo-theme.yaml (palette unchanged)
+ */
+
+@define-color fg-primary   #F2F4F8;
+@define-color fg-secondary #B0B8CC;
+@define-color bg-primary   #1A1F2E;
+@define-color bg-secondary #21283A;
+@define-color bg-elevated  #2F3D5C;
+@define-color accent       #4B9AFF;
+@define-color accent-strong #2470D5;
+@define-color warn         #DAA445;
+@define-color error        #FF5B5F;
+
+/* ANSI colors (normal + bright) */
+@define-color ansi0  #0D2449;
+@define-color ansi1  #FF5B5F;
+@define-color ansi2  #5FD94F;
+@define-color ansi3  #F0B000;
+@define-color ansi4  #4B9AFF;
+@define-color ansi5  #D966FF;
+@define-color ansi6  #00A3E5;
+@define-color ansi7  #F2F4F8;
+@define-color ansi8  #6B7589;
+@define-color ansi9  #FF8A8D;
+@define-color ansi10 #8EFF7D;
+@define-color ansi11 #FFE566;
+@define-color ansi12 #7AB6FF;
+@define-color ansi13 #EA9BFF;
+@define-color ansi14 #5DD4FF;
+@define-color ansi15 #FFFFFF;
+
+* {
+  font-family: "Inter", "JetBrainsMono Nerd Font", monospace;
+  font-size: 12px;
+}
+
+window {
+  background: transparent;
+}
+
+#waybar {
+  background: @bg-primary;
+  color: @fg-primary;
+  border-bottom: 1px solid @accent;
+  padding: 6px 10px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: @fg-secondary;
+  padding: 0 8px;
+  border-radius: 6px;
+  margin: 0 2px;
+}
+
+#workspaces button.focused {
+  background: @accent;
+  color: @bg-primary;
+  font-weight: 700;
+}
+
+#workspaces button.urgent {
+  background: @error;
+  color: @bg-primary;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #backlight {
+  background: @bg-secondary;
+  color: @fg-primary;
+  padding: 4px 10px;
+  margin: 0 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+#battery.warning { color: @warn; }
+#battery.critical { color: @error; }
+
+#pulseaudio.muted {
+  color: @ansi8;
+}
+
+#network.disconnected {
+  color: @warn;
+}
+
+#tray {
+  background: @bg-elevated;
+  border: 1px solid rgba(75,154,255,0.25);
+}

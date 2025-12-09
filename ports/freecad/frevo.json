@@ -1,0 +1,21 @@
+{
+  "Name": "Frevo",
+  "Description": "Frevo palette for FreeCAD (unchanged from theme/frevo-theme.yaml)",
+  "Colors": {
+    "BackgroundColor": "#1A1F2E",
+    "BackgroundColor2": "#21283A",
+    "HighlightColor": "#4B9AFF",
+    "SelectionColor": "#2B4A7A",
+    "PreselectionColor": "#7AB6FF",
+    "ObjectColor": "#F2F4F8",
+    "VisibilityColor": "#5FD94F",
+    "EditModeColor": "#F0B000",
+    "ErrorColor": "#FF5B5F",
+    "VertexColor": "#D966FF",
+    "FaceColor": "#2A3447",
+    "LineColor": "#4B9AFF",
+    "BoundingBoxColor": "#1F3D68",
+    "AnnotationTextColor": "#F2F4F8",
+    "AnnotationBackgroundColor": "#21283A"
+  }
+}

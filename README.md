@@ -9,47 +9,44 @@
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#palette">Palette</a> •
-  <a href="#ports">Ports</a> •
-  <a href="#the-story">The Story</a> •
+  <a href="#features">Features</a> &bull;
+  <a href="#installation">Installation</a> &bull;
+  <a href="#palette">Palette</a> &bull;
+  <a href="#ports">Ports</a> &bull;
+  <a href="#the-story">The Story</a> &bull;
   <a href="#contributing">Contributing</a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/WCAG-AA%20Compliant-success?style=flat-square" alt="WCAG AA">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License">
-  <img src="https://img.shields.io/badge/Version-1.0.0-purple?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/Ports-35+-purple?style=flat-square" alt="35+ Ports">
 </p>
 
 ---
 
-<!-- TODO: Add hero screenshot showing editor + terminal -->
-<!-- <p align="center">
-  <img src="assets/preview.png" alt="Frevo Theme Preview" width="800">
-</p> -->
-
 ## Features
 
-- **Accessible by Design** — WCAG 2.2 AA compliant with 100% contrast validation
-- **OLED Safe** — No pure black backgrounds, preventing haloing artifacts
-- **Colorblind Friendly** — Tested for deuteranopia, protanopia, and tritanopia
-- **Eye Strain Reduced** — Optimized for long coding sessions with controlled blue light
-- **7 Carefully Crafted Syntax Colors** — Following cognitive load principles (Miller's Law)
+- **Accessible by Design** - WCAG 2.2 AA compliant with 100% contrast validation
+- **OLED Safe** - No pure black backgrounds, preventing haloing artifacts
+- **Colorblind Friendly** - Tested for deuteranopia, protanopia, and tritanopia
+- **Eye Strain Reduced** - Optimized for long coding sessions with controlled blue light
+- **7 Syntax Colors** - Following cognitive load principles (Miller's Law)
 
 ## Installation
 
-### Quick Install
+### Quick Start
 
-| Application | Command/Instructions |
-|-------------|---------------------|
-| **Neovim** | See [ports/neovim](ports/neovim/) |
-| **VS Code** | Coming soon |
-| **Kitty** | Coming soon |
-| **Hyprland** | Coming soon |
+| Category | Application | Link |
+|----------|-------------|------|
+| Editor | Neovim | [ports/frevo.nvim](ports/frevo.nvim/) |
+| Editor | VS Code | [ports/vscode](ports/vscode/) |
+| Editor | JetBrains | [ports/jetbrains](ports/jetbrains/) |
+| Terminal | Kitty | [ports/kitty](ports/kitty/) |
+| Terminal | Alacritty | [ports/alacritty](ports/alacritty/) |
+| Desktop | Hyprland | [ports/hyprland](ports/hyprland/) |
 
-For detailed installation instructions, see the [Installation Guide](docs/INSTALL.md).
+> See [all 35+ ports](docs/PORTS.md) or the [Installation Guide](docs/INSTALL.md) for detailed instructions.
 
 ## Palette
 
@@ -68,33 +65,32 @@ For detailed installation instructions, see the [Installation Guide](docs/INSTAL
   </tr>
 </table>
 
-For the complete color specification, see the [Palette Reference](docs/PALETTE.md).
+> See the complete [Palette Reference](docs/PALETTE.md) for all colors, contrast ratios, and usage guidelines.
 
 ## Ports
 
-| Application | Category | Status | Links |
-|-------------|----------|--------|-------|
-| Neovim | Editor | ✅ Official | [Install](ports/neovim/) |
-| VS Code | Editor | 📝 Planned | — |
-| Kitty | Terminal | 📝 Planned | — |
-| Alacritty | Terminal | 📝 Planned | — |
-| Hyprland | Desktop | 📝 Planned | — |
-| Waybar | Desktop | 📝 Planned | — |
-| GTK | Desktop | 📝 Planned | — |
+Frevo is available for **35+ applications** across multiple categories:
 
-**Legend:** ✅ Official • 🚧 In Progress • 📝 Planned • 👥 Community
+| Category | Applications |
+|----------|--------------|
+| **Editors** | [Neovim](ports/frevo.nvim/), [VS Code](ports/vscode/), [JetBrains](ports/jetbrains/), [Kate](ports/kate/) |
+| **Terminals** | [Kitty](ports/kitty/), [Alacritty](ports/alacritty/), [iTerm2](ports/iterm2/) |
+| **Desktop** | [Hyprland](ports/hyprland/), [Waybar](ports/waybar/), [Rofi](ports/rofi/), [Wofi](ports/wofi/), [Dunst](ports/dunst/) |
+| **Shells** | [Fish](ports/fish/), [Zsh](ports/zsh/), [Starship](ports/starship/), [Tmux](ports/tmux/) |
+| **Browsers** | [Firefox](ports/firefox/), [Chrome](ports/chrome/) |
+| **Apps** | [Slack](ports/slack/), [Todoist](ports/todoist/), [qBittorrent](ports/qbittorrent/) |
+| **Creative** | [Figma](ports/figma/), [GIMP](ports/gimp/), [FreeCAD](ports/freecad/), [KiCad](ports/kicad/) |
+| **Dev Tools** | [GitHub](ports/github/), [OpenCode](ports/opencode/) |
 
-See all ports and their status at [docs/PORTS.md](docs/PORTS.md).
+> See [all ports and their status](docs/PORTS.md).
 
 ## The Story
 
-<!-- TODO: Expand cultural storytelling -->
+**Frevo** is a vibrant musical genre and dance from Pernambuco, Brazil. Born in the streets of Recife and Olinda during carnival, it is characterized by explosive energy, colorful umbrellas, and acrobatic movements.
 
-**Frevo** is a vibrant musical genre and dance from Pernambuco, Brazil. Born in the streets of Recife and Olinda during carnival, Frevo is characterized by its explosive energy, colorful umbrellas, and acrobatic movements.
+This theme captures the essence of Pernambuco's carnival nights - the warm glow of street lights against the deep blue evening sky, the flash of colorful costumes, and the electric energy that fills the air when the Frevo music plays.
 
-This theme captures the essence of Pernambuco's carnival nights — the warm glow of street lights against the deep blue evening sky, the flash of colorful costumes, and the electric energy that fills the air when the Frevo music plays.
-
-Each color in this palette was chosen not just for accessibility and readability, but to evoke the spirit of one of Brazil's most vibrant cultural expressions.
+Each color was chosen not just for accessibility and readability, but to evoke the spirit of one of Brazil's most vibrant cultural expressions.
 
 ## Documentation
 
@@ -117,10 +113,10 @@ Please read the [Contributing Guide](docs/CONTRIBUTING.md) first.
 
 ## License
 
-[MIT](LICENSE) © 2025 Renato Barros
+[MIT](LICENSE) - 2025 Renato Barros
 
 ---
 
 <p align="center">
-  Made with ❤️ in Pernambuco, Brazil
+  Made with care in Pernambuco, Brazil
 </p>
