@@ -4,38 +4,42 @@ Welcome to the Frevo Color Theme documentation.
 
 ## Quick Navigation
 
-| Document | Description |
-|----------|-------------|
-| [PALETTE.md](PALETTE.md) | Color reference with hex codes, contrast ratios, and usage |
-| [INSTALL.md](INSTALL.md) | Installation instructions for all platforms |
-| [PORTS.md](PORTS.md) | Status and links for all 35+ ports |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Guidelines for contributing |
+| Document                              | What You'll Learn                                                       |
+| ------------------------------------- | ----------------------------------------------------------------------- |
+| [The Frevo Palette](PALETTE.md)       | How we chose the colors — the theory, the process, and the final values |
+| [Installation Guide](INSTALL.md)      | Step-by-step setup for all 35+ supported applications                   |
+| [Available Ports](PORTS.md)           | Complete list of ports and their status                                 |
+| [Contributing Guide](CONTRIBUTING.md) | How to create ports and contribute                                      |
+
+## Start Here
+
+**New to Frevo?** Start with the [main README](../README.md) for an overview.
+
+**Want to understand the colors?** Read [The Frevo Palette](PALETTE.md) — it explains why we chose each color and how they work together.
+
+**Ready to install?** Jump to the [Installation Guide](INSTALL.md) for your application.
+
+**Want to contribute?** Check the [Contributing Guide](CONTRIBUTING.md) for guidelines on creating new ports.
 
 ## Structure
 
 ```
 docs/
   README.md          # This file
-  PALETTE.md         # Color specifications
-  INSTALL.md         # Installation guide
+  PALETTE.md         # Color theory and specifications
+  INSTALL.md         # Installation instructions
   PORTS.md           # Port status and links
   CONTRIBUTING.md    # Contribution guidelines
 ```
 
-## Quick Links
+## Source Files
 
-- [Main README](../README.md)
-- [License](../LICENSE)
-- [Ports Directory](../ports/)
+The canonical color definitions live in:
 
-## Need Help?
+- **YAML**: [`theme/frevo-theme.yaml`](../theme/frevo-theme.yaml) — the source of truth
+- **Neovim**: [`frevo.nvim/lua/frevo/palette.lua`](../../frevo.nvim/lua/frevo/palette.lua)
 
-| Question | Resource |
-|----------|----------|
-| Installation issues? | [INSTALL.md](INSTALL.md) |
-| Want to contribute? | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| Looking for a port? | [PORTS.md](PORTS.md) |
-| Color specifications? | [PALETTE.md](PALETTE.md) |
+All ports should derive their colors from these files to ensure consistency.
 
 ---
 

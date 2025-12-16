@@ -1,5 +1,0 @@
-# Slack custom theme colors (Frevo palette)
-# Order: Column BG, Menu BG, Active Item, Active Item Text, Hover Item, Text, Active Presence, Mention Badge
-# Paste the comma-separated line below into Slack's custom theme field.
-
-#1A1F2E,#21283A,#4B9AFF,#1A1F2E,#2F3D5C,#F2F4F8,#5FD94F,#FF5B5F
